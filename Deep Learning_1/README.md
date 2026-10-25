@@ -9,7 +9,6 @@ An end-to-end image-classification project built with TensorFlow/Keras: a custom
 | **Framework** | TensorFlow 2.20.0 / Keras 3.13.2 |
 | **Entry point** | `notebook.ipynb.ipynb` |
 | **Primary language of code comments & narrative** | Indonesian |
-| **Deliverable type** | Course submission (Dicoding-style), with mandatory accuracy criteria checked in-notebook |
 
 ### Purpose and learning objectives
 
