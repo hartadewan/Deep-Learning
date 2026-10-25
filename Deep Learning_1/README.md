@@ -535,6 +535,6 @@ The following are absent from the archive. Each must be supplied by you (or by t
 
 ## Attribution and licence
 
-**Author (as documented in the notebook's own header):** Hartanto Dewantoro 
+**Author:** Hartanto Dewantoro 
 
-**Third-party data:** the trained weights derive from the Kaggle dataset `alessiocorrado99/animals10`, which is governed by its own terms at source. Those terms are not reproduced in this archive and should be reviewed before redistributing the model artifacts.
+**Third-party data:** The trained weights derive from the Kaggle dataset `alessiocorrado99/animals10`, which is governed by its own terms at source. Those terms are not reproduced in this archive and should be reviewed before redistributing the model artifacts.
