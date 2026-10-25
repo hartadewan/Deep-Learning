@@ -23,10 +23,6 @@ The notebook is organised as a complete, auditable deep-learning workflow and de
 7. **Multi-target deployment export** — SavedModel, TFLite (with optimisation enabled), and TF.js graph-model, followed by a structural verification routine.
 8. **On-device inference validation** — predictions drawn from the exported TFLite interpreter rather than the in-memory Keras model.
 
-### Intended audience
-
-Machine-learning students and practitioners who need a worked, reviewable reference for the full "data → trained CNN → multi-format deployment artifact" pipeline; and reviewers/graders who need to confirm that the stated criteria were met.
-
 ---
 
 ## Table of contents
