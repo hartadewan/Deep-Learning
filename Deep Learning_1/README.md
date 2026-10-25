@@ -4,7 +4,7 @@ An end-to-end image-classification project built with TensorFlow/Keras: a custom
 
 | | |
 |---|---|
-| **Internal project title** | *Proyek Klasifikasi Gambar: Klasifikasi Hewan* (Image Classification Project: Animal Classification) |
+| **Internal project title** | Image Classification Project: Animal Classification |
 | **Task** | Supervised multi-class image classification (4 classes) |
 | **Framework** | TensorFlow 2.20.0 / Keras 3.13.2 |
 | **Entry point** | `notebook.ipynb.ipynb` |
