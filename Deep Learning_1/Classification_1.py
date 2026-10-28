@@ -1,7 +1,3 @@
-# %% [markdown]
-# # Proyek Klasifikasi Gambar 1
-
-# %% [markdown]
 # ## Import Semua Library
 
 # %%
