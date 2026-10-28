@@ -31,7 +31,7 @@
 ## Contents
 
 - [Analisis Sentimen Ulasan Aplikasi Edukasi](#analisis-sentimen-ulasan-aplikasi-edukasi)
-  - [At a glance](#at-a-glance)
+  - [Summary](#summary)
   - [Contents](#contents)
   - [Overview](#overview)
   - [Repository structure](#repository-structure)
