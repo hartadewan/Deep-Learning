@@ -112,7 +112,7 @@ assert len(distribusi) >= 3,  "Jumlah kelas harus >= 3."
 assert len(ukuran_unik) > 1,  "Resolusi asli harus beragam (saran)."
 print("\nMemenuhi: >= 10.000 gambar, >= 3 kelas, resolusi beragam.")
 
-# Visualisasi distribusi kelas
+# Class distribution visualization
 plt.figure(figsize=(8, 4))
 plt.bar(list(distribusi.keys()), list(distribusi.values()), color="steelblue")
 plt.title("Distribusi Jumlah Gambar per Kelas")
@@ -121,7 +121,6 @@ plt.xticks(rotation=15)
 plt.tight_layout()
 plt.show()
 
-# %%
 # =========================================================
 kelas_list = sorted(os.listdir(WORK_DIR))
 plt.figure(figsize=(12, 3 * len(kelas_list)))
@@ -136,13 +135,10 @@ for i, kelas in enumerate(kelas_list):
 plt.tight_layout()
 plt.show()
 
-# %% [markdown]
 # ### Data Preprocessing
 
-# %% [markdown]
 # #### Split Dataset
 
-# %%
 OUTPUT_SPLIT = "/content/dataset_split"
 if os.path.exists(OUTPUT_SPLIT):
     shutil.rmtree(OUTPUT_SPLIT)
