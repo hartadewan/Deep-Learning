@@ -75,7 +75,7 @@ Filenames below are reproduced exactly as they appear in the archive, including 
 
 | Path | Purpose | Role in the workflow |
 |---|---|---|
-| `notebook.ipynb.ipynb` | The complete, executed project notebook (26 cells: 16 code, 10 Markdown) with all outputs retained, including rendered figures. | **Sole entry point and sole source of executable logic.** Contains every stage: dependency install, data download, curation, EDA, split, augmentation, model definition, training, evaluation, export, and TFLite inference. |
+| `Classification_1.py` | The complete, executed project notebook (26 cells: 16 code, 10 Markdown) with all outputs retained, including rendered figures. | **Sole entry point and sole source of executable logic.** Contains every stage: dependency install, data download, curation, EDA, split, augmentation, model definition, training, evaluation, export, and TFLite inference. |
 | `requirements.txt` | Output of `pip freeze` from the execution runtime — 703 pinned entries describing the entire environment, not a curated dependency list. | Environment record. **Not directly installable as-is** (see [Reproducibility barriers](#reproducibility-barriers-and-known-issues)). |
 | `saved_model/saved_model.pb` | Serialised TensorFlow graph and signature definitions. | Canonical full-precision export; **also the source artifact** from which the TFLite and TF.js versions are converted. |
 | `saved_model/variables/variables.data-00000-of-00001` | Trained weight values (5,236,341 bytes). | Weight payload for the SavedModel. |
