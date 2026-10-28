@@ -547,7 +547,3 @@ Reproduced from the notebook's §17 output. **9 of 11 items pass.**
 | LULUS / PERIKSA ULANG | pass / re-check | | Kriteria Utama / Saran | main criterion / suggestion |
 
 ---
-
-## License and data use
-
-The archive includes **no license file** and no authorship or citation metadata. The dataset consists of public Google Play reviews. Review the platform's terms of service before redistributing `dataset_ulasan_edukasi.csv`.
