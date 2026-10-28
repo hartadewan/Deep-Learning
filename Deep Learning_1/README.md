@@ -14,14 +14,14 @@ An end-to-end image-classification project built with TensorFlow/Keras: a custom
 
 The notebook is organised as a complete, auditable deep-learning workflow and demonstrates the following competencies:
 
-1. **Dataset acquisition and curation** — programmatic download, integrity verification, class subsetting, and label translation.
-2. **Exploratory verification against explicit acceptance criteria** — the notebook asserts a minimum dataset size (≥ 10,000 images), a minimum number of classes (≥ 3), and heterogeneous native resolutions.
-3. **Reproducible preprocessing** — deterministic stratified-by-folder splitting, in-graph rescaling, and train-only data augmentation.
-4. **CNN design and training from scratch** — no transfer learning or pretrained backbone is used.
-5. **Training control via callbacks** — early stopping, adaptive learning-rate reduction, checkpointing, and a custom accuracy-threshold stopping callback.
-6. **Quantitative evaluation** — hold-out test accuracy, confusion matrix, and a per-class precision/recall/F1 report.
-7. **Multi-target deployment export** — SavedModel, TFLite (with optimisation enabled), and TF.js graph-model, followed by a structural verification routine.
-8. **On-device inference validation** — predictions drawn from the exported TFLite interpreter rather than the in-memory Keras model.
+1. **Dataset acquisition and curation:** programmatic download, integrity verification, class subsetting, and label translation.
+2. **Exploratory verification against explicit acceptance criteria:** the notebook asserts a minimum dataset size (≥ 10,000 images), a minimum number of classes (≥ 3), and heterogeneous native resolutions.
+3. **Reproducible preprocessing:** deterministic stratified-by-folder splitting, in-graph rescaling, and train-only data augmentation.
+4. **CNN design and training from scratch:** no transfer learning or pretrained backbone is used.
+5. **Training control via callbacks:** early stopping, adaptive learning-rate reduction, checkpointing, and a custom accuracy-threshold stopping callback.
+6. **Quantitative evaluation:** hold-out test accuracy, confusion matrix, and a per-class precision/recall/F1 report.
+7. **Multi-target deployment export:** SavedModel, TFLite (with optimisation enabled), and TF.js graph-model, followed by a structural verification routine.
+8. **On-device inference validation:** predictions drawn from the exported TFLite interpreter rather than the in-memory Keras model.
 
 ---
 
