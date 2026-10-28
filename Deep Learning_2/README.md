@@ -550,4 +550,4 @@ Reproduced from the notebook's §17 output. **9 of 11 items pass.**
 
 ## License and data use
 
-The archive includes **no license file** and no authorship or citation metadata. Add both before publishing or accepting contributions. The dataset consists of public Google Play reviews. Review the platform's terms of service before redistributing `dataset_ulasan_edukasi.csv`.
+The archive includes **no license file** and no authorship or citation metadata. The dataset consists of public Google Play reviews. Review the platform's terms of service before redistributing `dataset_ulasan_edukasi.csv`.
