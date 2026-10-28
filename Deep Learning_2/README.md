@@ -1,6 +1,6 @@
 <div align="center">
 
-# Analisis Sentimen Ulasan Aplikasi Edukasi
+# Sentiment Analysis of Educational App Reviews
 
 **Three-class sentiment classification of Indonesian Google Play reviews for education apps,<br/>using lexicon-based weak labeling and three deep-learning training schemes.**
 
