@@ -1,9 +1,7 @@
-# ## Import Semua Library
-
-# %%
+# Split-Folders
 !pip install split-folders --quiet
 
-# %%
+# ## Import Semua Library
 import os
 import glob
 import random
@@ -33,7 +31,6 @@ print("TensorFlow :", tf.__version__)
 print("Keras      :", tf.keras.__version__)
 print("GPU aktif  :", tf.config.list_physical_devices('GPU'))
 
-# %% [markdown]
 # ## Data Preparation
 
 # %%
