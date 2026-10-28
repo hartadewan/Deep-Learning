@@ -1,0 +1,19 @@
+{
+  "kode_skema": "C",
+  "nama_skema": "Sequence Embedding + CNN 1D",
+  "jenis_fitur": "sequence",
+  "arsitektur": "cnn",
+  "panjang_urutan": 60,
+  "max_features": 10000,
+  "kelas": [
+    "negatif",
+    "netral",
+    "positif"
+  ],
+  "akurasi_latih": 0.9161638021469116,
+  "akurasi_uji": 0.8697214722633362,
+  "f1_makro": 0.865814372461195,
+  "ambang_positif": 1.0,
+  "ambang_negatif": -1.0,
+  "disimpan_pada": "2026-07-23T23:49:53"
+}
