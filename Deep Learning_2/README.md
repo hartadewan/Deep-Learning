@@ -27,8 +27,6 @@
 | **Recorded test accuracy** | 0.8697 (macro-F1 0.8658) on a 30 % stratified hold-out — see [Results](#results) and [Known issues](#known-issues-and-reproducibility-notes) |
 | **Entry point** | `Training_2.py` (single notebook; no package, CLI, or test suite) |
 
-> [!NOTE]
-> All metrics, timings, and figures in this README are copied from the **saved outputs** inside `Training_2.py` (recorded on 2026-07-23). They were not regenerated for this document.
 
 ## Contents
 
