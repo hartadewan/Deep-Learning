@@ -19,7 +19,7 @@
   - [🧭 Contents](#-contents)
   - [📖 Overview](#-overview)
   - [✨ Key Features](#-key-features)
-  - [🔄 Pipeline at a Glance](#-pipeline-at-a-glance)
+  - [🔄 Pipeline](#-pipeline)
   - [🧠 Model Architecture](#-model-architecture)
   - [🧰 Technology Stack](#-technology-stack)
   - [🚀 Getting Started](#-getting-started)
@@ -80,7 +80,7 @@ This project trains a compact convolutional neural network (CNN) **from scratch*
 
 ---
 
-## 🔄 Pipeline at a Glance
+## 🔄 Pipeline
 
 ```mermaid
 flowchart TB
