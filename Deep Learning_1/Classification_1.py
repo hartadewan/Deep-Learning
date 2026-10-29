@@ -1,7 +1,7 @@
 # Split-Folders
 !pip install split-folders --quiet
 
-# ## Import Semua Library
+# ## Import Library
 import os
 import glob
 import random
@@ -37,7 +37,6 @@ print("GPU aktif  :", tf.config.list_physical_devices('GPU'))
 dataset_path = kagglehub.dataset_download("alessiocorrado99/animals10")
 print("Lokasi dataset:", dataset_path)
 
-# Cari folder yang berisi sub-folder kelas ('raw-img')
 kandidat = glob.glob(os.path.join(dataset_path, "**", "raw-img"), recursive=True)
 SOURCE_DIR = kandidat[0] if kandidat else dataset_path
 print("Direktori sumber kelas:", SOURCE_DIR)
@@ -51,7 +50,7 @@ TRANSLATE = {
     "mucca": "sapi", "pecora": "domba", "ragno": "laba_laba",
     "scoiattolo": "tupai",
 }
-# Total ~14.900 gambar
+# Total ~14,900 pictures
 SELECTED_CLASSES = ["cane", "ragno", "gallina", "farfalla"]
 VALID_EXT = {".jpg", ".jpeg", ".png", ".bmp", ".gif"}
 
@@ -146,7 +145,7 @@ if os.path.exists(OUTPUT_SPLIT):
 splitfolders.ratio(WORK_DIR, output=OUTPUT_SPLIT, seed=SEED, ratio=(0.8, 0.1, 0.1))
 print("Struktur hasil split:", os.listdir(OUTPUT_SPLIT))
 
-# ---- Parameter citra ----
+# ---- Parameter ----
 IMG_SIZE = (160, 160)
 BATCH_SIZE = 32
 
@@ -262,7 +261,7 @@ history = model.fit(
 )
 
 # %% [markdown]
-# ## Evaluasi dan Visualisasi
+# ## Evaluation and Visualization
 
 # %%
 train_loss, train_acc = model.evaluate(train_ds, verbose=0)
@@ -279,7 +278,7 @@ else:
 
 # %%
 # ====================================
-# Plot akurasi & loss selama training
+# Accuracy & loss plot during training
 # ====================================
 acc      = history.history["accuracy"]
 val_acc  = history.history["val_accuracy"]
@@ -330,12 +329,12 @@ plt.show()
 print(classification_report(y_true, y_pred, target_names=class_names))
 
 # %% [markdown]
-# ## Konversi Model
+# ## Model Conversion
 
 # %%
-# ===================================
-# Konversi & simpan model ke 3 format
-# ===================================
+# =====================================
+# Convert & save the model to 3 formats
+# =====================================
 
 import os
 import sys
@@ -439,7 +438,7 @@ def verifikasi_struktur(base_dir) -> None:
         for berkas in sorted(files):
             print("  " * (len(level) + 1) + berkas)
 
-# ---- Orkestrasi ----
+# ---- Orchestration ----
 if 'model' not in locals() and 'model' not in globals():
     print("Error: Variabel 'model' tidak ditemukan. Pastikan cell training sudah dijalankan.")
 else:
