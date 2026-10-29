@@ -30,7 +30,7 @@
 
 ## Contents
 
-- [Analisis Sentimen Ulasan Aplikasi Edukasi](#analisis-sentimen-ulasan-aplikasi-edukasi)
+- [Sentiment Analysis of Educational App Reviews](#sentiment-analysis-of-educational-app-reviews)
   - [Summary](#summary)
   - [Contents](#contents)
   - [Overview](#overview)
