@@ -2,7 +2,7 @@
 
 # Sentiment Analysis of Educational App Reviews
 
-**Three-class sentiment classification of Indonesian Google Play reviews for education apps,<br/>using lexicon-based weak labeling and three deep-learning training schemes.**
+**Three-class sentiment classification of Indonesian Google Play reviews for education apps,<br/>using lexicon-based labeling and three deep-learning training schemes.**
 
 ![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.21.0-FF6F00?logo=tensorflow&logoColor=white)
