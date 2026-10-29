@@ -347,7 +347,7 @@ from pathlib import Path
 from google.colab import drive
 drive.mount('/content/drive')
 
-# ---- Konfigurasi ----
+# ---- Configuration ----
 SUBMISSION_DIR = "/content/drive/MyDrive/submission"
 SAVED_MODEL_DIR = os.path.join(SUBMISSION_DIR, "saved_model")
 TFLITE_DIR      = os.path.join(SUBMISSION_DIR, "tflite")
