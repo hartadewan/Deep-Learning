@@ -462,9 +462,9 @@ else:
 # ## Inference
 
 # %%
-# ===================================
-# Inferensi menggunakan model TF-Lite
-# ===================================
+# ===============================
+# Inference using a TF-Lite model
+# ===============================
 
 with open(os.path.join(TFLITE_DIR, "label.txt")) as f:
     label_infer = [l.strip() for l in f.readlines() if l.strip()]
