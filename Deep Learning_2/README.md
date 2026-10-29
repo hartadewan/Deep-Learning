@@ -57,7 +57,6 @@
   - [Methodological limitations](#methodological-limitations)
   - [Rubric compliance matrix](#rubric-compliance-matrix)
   - [Glossary](#glossary)
-  - [License and data use](#license-and-data-use)
 
 ---
 
