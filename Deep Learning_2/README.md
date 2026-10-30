@@ -28,7 +28,7 @@
 | **Entry point** | `Training_2.py` (single notebook; no package, CLI, or test suite) |
 
 
-## Contents
+## 🧭 Contents
 
 - [Sentiment Analysis of Educational App Reviews](#sentiment-analysis-of-educational-app-reviews)
   - [Summary](#summary)
@@ -60,7 +60,7 @@
 
 ---
 
-## Overview
+## 📖 Overview
 
 This project is a self-contained research notebook. It takes raw Indonesian app reviews, normalises informal language, assigns sentiment labels with a hand-built lexicon, and then trains and compares three neural classifiers that learn to reproduce those labels from text. The best scheme (by test accuracy) is saved to `artifacts/` and reloaded through a `SentimentPredictor` class for categorical inference.
 
@@ -144,7 +144,7 @@ The CSV contains no reviewer names or user handles.
 
 ---
 
-## Pipeline
+## 🔄 Pipeline
 
 ```mermaid
 flowchart TB
