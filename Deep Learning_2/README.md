@@ -57,6 +57,7 @@
   - [Methodological limitations](#methodological-limitations)
   - [Rubric compliance matrix](#rubric-compliance-matrix)
   - [Glossary](#glossary)
+  - [License and Credits](#license-and-credits)
 
 ---
 
@@ -544,3 +545,9 @@ Reproduced from the notebook's §17 output. **9 of 11 items pass.**
 | LULUS / PERIKSA ULANG | pass / re-check | | Kriteria Utama / Saran | main criterion / suggestion |
 
 ---
+
+<a id="license-and-credits"></a>
+## 📄 License and Credits
+
+- **Author:** Hartanto Dewantoro.
+- **License:** MIT License
