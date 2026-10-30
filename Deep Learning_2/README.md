@@ -15,7 +15,7 @@
 
 ---
 
-## Summary
+## 📌 Summary
 
 | | |
 |---|---|
@@ -84,7 +84,7 @@ The notebook is organised as a 17-section workflow and is written in Indonesian 
 
 ---
 
-## Repository structure
+## 🏗️ Repository structure
 
 ```text
 .
@@ -101,7 +101,7 @@ The notebook is organised as a 17-section workflow and is written in Indonesian 
 
 ---
 
-## Dataset
+## 🛢️ Dataset
 
 ### Sources
 
@@ -212,7 +212,7 @@ The mean lexicon score rises monotonically from about −0.5 at 1★ to about +1
 
 ---
 
-## Experimental design
+## 🧪 Experimental design
 
 The three schemes share one harness (`run_experiment`, §9). It applies a stratified train/test split, fits the feature extractor on the training portion only, holds out a stratified 10 % validation subset, and trains with balanced class weights.
 
@@ -266,7 +266,7 @@ The embedding uses 6,715 rows rather than the 10,000 cap because the training sp
 
 ---
 
-## Results
+## 🎯 Results
 
 ### Scheme comparison
 
@@ -336,7 +336,7 @@ On 10 randomly sampled dataset reviews (`random_state=42`), 8 of 10 predictions 
 
 ---
 
-## Getting started
+## 🚀 Getting started
 
 ### Prerequisites
 
@@ -392,7 +392,7 @@ dataset_ulasan_edukasi.csv              ← location in this archive
 
 ---
 
-## Running inference
+## 🧐 Running inference
 
 `SentimentPredictor` is defined inside the notebook (§16). There is no importable module. It reapplies the training-time preprocessing (`basic_clean` → `normalise_slang` → `ACTIVE_STOPWORDS` filter → Sastrawi stem) before vectorising, so those definitions must exist in the session.
 
@@ -439,7 +439,7 @@ To use the shipped artifacts **without retraining**:
 
 ---
 
-## Configuration reference
+## 🧩 Configuration reference
 
 All tunables are frozen dataclasses in §2 and §6. Edit them in place before running the notebook.
 
@@ -498,7 +498,7 @@ All tunables are frozen dataclasses in §2 and §6. Edit them in place before ru
 
 ---
 
-## Methodological limitations
+## 🚫 Methodological limitations
 
 - **Weak supervision.** The targets are lexicon outputs, not human annotations. Test accuracy therefore measures how well the model **reproduces the lexicon's decision rule**, not agreement with human-judged sentiment. Agreement between the lexicon and star ratings is weak (κ = 0.229), and the recorded examples include visible label noise (e.g. a 2★ crash complaint labelled `positif`).
 - **Confounded comparison.** The schemes differ in features, architecture, vocabulary, sequence length, **and** test split at the same time. Scheme C is also evaluated on a different, larger (30 %) test partition. Performance differences cannot be attributed to any single factor.
@@ -509,7 +509,7 @@ All tunables are frozen dataclasses in §2 and §6. Edit them in place before ru
 
 ---
 
-## Rubric compliance matrix
+## 📜 Rubric compliance matrix
 
 Reproduced from the notebook's §17 output. **9 of 11 items pass.**
 
@@ -531,7 +531,7 @@ Reproduced from the notebook's §17 output. **9 of 11 items pass.**
 
 ---
 
-## Glossary
+## 🔡 Glossary
 
 | Indonesian | English | | Indonesian | English |
 |---|---|---|---|---|
