@@ -37,7 +37,7 @@
   - [🧪 Development and Testing](#-development-and-testing)
   - [🔧 Troubleshooting and Limitations](#-troubleshooting-and-limitations)
   - [📘 Glossary](#-glossary)
-  - [📄 License and Credits](#license-and-credits)
+  - [📄 License and Credits](#-license-and-credits)
 
 ---
 
