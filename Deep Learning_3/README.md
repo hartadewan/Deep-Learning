@@ -222,7 +222,7 @@ flowchart TB
 <a id="prerequisites"></a>
 ### Prerequisites
 
-- **Python 3.12 or 3.13.** No version is stated in the archive. This range is derived from the pins: NumPy `2.5.0` requires Python ≥ 3.12, and TensorFlow `2.21.0` publishes wheels up to CPython 3.13.
+- **Python 3.12 or 3.13.** This range is derived from the pins: NumPy `2.5.0` requires Python ≥ 3.12, and TensorFlow `2.21.0` publishes wheels up to CPython 3.13.
 - **Internet access** on the first run, to download the dataset from Google Drive. Alternatively, place a compatible `Bitcoin3.csv` next to the script.
 - **A GPU is optional.** The script detects one automatically, enables memory growth, and warns that CPU training will be much slower.
 
