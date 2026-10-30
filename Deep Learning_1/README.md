@@ -37,7 +37,7 @@
   - [🧪 Development and Testing](#-development-and-testing)
   - [🔧 Troubleshooting and Limitations](#-troubleshooting-and-limitations)
   - [📘 Glossary](#-glossary)
-  - [📄 Credits](#-credits)
+  - [📄 License and Credits](#license-and-credits)
 
 ---
 
@@ -503,7 +503,9 @@ assert p.shape == (1, 4) and abs(float(p.sum()) - 1.0) < 1e-3
 
 ---
 
-## 📄 Credits
+## 📄 License and Credits
 
+- **Author:** Hartanto Dewantoro.
+- **License:** MIT License
 - **Dataset.** [Animals-10 on Kaggle](https://www.kaggle.com/datasets/alessiocorrado99/animals10) (`alessiocorrado99/animals10`).
 - **Software.** Built with TensorFlow, Keras, the TensorFlow.js converter, `split-folders`, `kagglehub`, scikit-learn, Pillow, NumPy, and Matplotlib.
