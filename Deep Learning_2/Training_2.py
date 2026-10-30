@@ -1,10 +1,7 @@
-# %% [markdown]
-# ## 1. Import
-
-# %%
 # Dependensi tambahan
 %pip install --quiet Sastrawi==1.0.1
 
+# ## 1. Import Library
 # %%
 from __future__ import annotations
 
