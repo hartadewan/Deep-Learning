@@ -161,7 +161,7 @@ The markdown commentary in §4.2, §5.2, and §5.4 records the following results
 
 All variants output `(batch, 24, 1)` in scaled space. An assertion in §13.3 enforces this.
 
-| # | Model | API | Attention | Extra custom blocks | Loss | Max epochs | Test decoding | Shipped? |
+|  | Model | API | Attention | Extra custom blocks | Loss | Max epochs | Test decoding | Shipped? |
 |---|---|---|---|---|---|---|---|---|
 | 1 | `model_baseline_LSTM` | Functional | — | — | MAE | 25 | Direct (24 at once) | ✅ 63,384 params |
 | 2 | `model_seq2seq_LSTM` | Functional | — | — | MAE | 25 | Autoregressive, O(H²) | ✅ 40,065 params |
