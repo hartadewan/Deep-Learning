@@ -22,14 +22,14 @@
 
 The project forecasts **multi-step (24-hour) Bitcoin `Close` prices** from hourly multivariate market data covering 2017–2023. Bitcoin's price level is a non-stationary, trend-dominated series. A network trained on it naively tends to regress toward the training-set mean. This pipeline counters that in two ways:
 
-1. **Statistical diagnosis first.** ADF tests, seasonal decomposition, and ACF/PACF analysis guide the window size, feature set, and architecture.
-2. **Level-anchored residual decoding.** Every model predicts a *change* (Δ) and adds it to the last observed close through a custom `LevelAnchorAdd` layer. This turns the ADF result into a structural constraint on the architecture.
+1. **Statistical diagnosis first:** ADF tests, seasonal decomposition, and ACF/PACF analysis guide the window size, feature set, and architecture.
+2. **Level-anchored residual decoding:** Every model predicts a *change* (Δ) and adds it to the last observed close through a custom `LevelAnchorAdd` layer. This turns the ADF result into a structural constraint on the architecture.
 
 All models are scored on a held-out, chronologically final test set using **autoregressive decoding**. They are compared against a **persistence (random-walk) benchmark** and a pre-set MAE threshold.
 
-**Who it is for.** The code is organized as a graded deep-learning time-series project. It references numbered assessment criteria, a rejection rule that makes MAE the primary metric, and an "advanced" MAE gate. Beyond assessment, it serves as a worked reference for anyone learning how to build Keras components from first principles: custom layers, losses, callbacks, and training loops.
+**Who it is for:** The code is organized as a graded deep-learning time-series project. It references numbered assessment criteria, a rejection rule that makes MAE the primary metric, and an "advanced" MAE gate. Beyond assessment, it serves as a worked reference for anyone learning how to build Keras components from first principles: custom layers, losses, callbacks, and training loops.
 
-**What kind of project this is.** A single-script research and coursework pipeline plus three trained model artifacts. It is not a library or a deployable application.
+**What kind of project this is:** A single-script research and coursework pipeline plus three trained model artifacts. It is not a library or a deployable application.
 
 ---
 
