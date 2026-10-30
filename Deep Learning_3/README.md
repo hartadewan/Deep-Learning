@@ -27,7 +27,7 @@ The project forecasts **multi-step (24-hour) Bitcoin `Close` prices** from hourl
 
 All models are scored on a held-out, chronologically final test set using **autoregressive decoding**. They are compared against a **persistence (random-walk) benchmark** and a pre-set MAE threshold.
 
-**Who it is for.** The code is organized as a graded deep-learning time-series assignment. It references numbered assessment criteria, a rejection rule that makes MAE the primary metric (*Ketentuan Penolakan #7*), and an "advanced" MAE gate. Beyond assessment, it serves as a worked reference for anyone learning how to build Keras components from first principles: custom layers, losses, callbacks, and training loops.
+**Who it is for.** The code is organized as a graded deep-learning time-series project. It references numbered assessment criteria, a rejection rule that makes MAE the primary metric (*Ketentuan Penolakan #7*), and an "advanced" MAE gate. Beyond assessment, it serves as a worked reference for anyone learning how to build Keras components from first principles: custom layers, losses, callbacks, and training loops.
 
 **What kind of project this is.** A single-script research and coursework pipeline plus three trained model artifacts. It is not a library or a deployable application.
 
