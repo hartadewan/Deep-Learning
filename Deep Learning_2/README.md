@@ -515,19 +515,19 @@ Reproduced from the notebook's §17 output. **9 of 11 items pass.**
 
 | Item | Requirement | Recorded actual | Status |
 |---|---|---|:---:|
-| Kriteria Utama 1 | Self-scraped data, ≥ 3,000 samples | 11,128 samples | ✅ |
-| Kriteria Utama 2 | Feature extraction and data labelling | Weighted lexicon + TF-IDF/Sequence | ✅ |
-| Kriteria Utama 3 | Machine-learning training algorithm | BILSTM, CNN, DENSE | ✅ |
-| Kriteria Utama 4 | Test accuracy ≥ 85 % | 86.97 % (best) | ✅ |
-| Saran 1 | Deep-learning algorithm | 3 neural architectures | ✅ |
-| Saran 2 | Train **and** test accuracy > 92 % | Not met by any scheme | ⚠️ |
-| Saran 2 (cont.) | Other schemes ≥ 85 % | A and B below 85 % | ⚠️ |
-| Saran 3 | ≥ 3 classes | 3: negatif, netral, positif | ✅ |
-| Saran 4 | ≥ 10,000 samples | 11,128 samples | ✅ |
-| Saran 5 | Three schemes, ≥ 2 distinct combinations | 3 schemes, 3 dimensions varied | ✅ |
-| Saran 6 | Inference outputs a categorical class | 9 test sentences + 10 real samples | ✅ |
+| Criteria 1 | Self-scraped data, ≥ 3,000 samples | 11,128 samples | ✅ |
+| Criteria 2 | Feature extraction and data labelling | Weighted lexicon + TF-IDF/Sequence | ✅ |
+| Criteria 3 | Machine-learning training algorithm | BILSTM, CNN, DENSE | ✅ |
+| Criteria 4 | Test accuracy ≥ 85 % | 86.97 % (best) | ✅ |
+| Suggestion 1 | Deep-learning algorithm | 3 neural architectures | ✅ |
+| Suggestion 2 | Train **and** test accuracy > 92 % | Not met by any scheme | ⚠️ |
+| Suggestion 2 (cont.) | Other schemes ≥ 85 % | A and B below 85 % | ⚠️ |
+| Suggestion 3 | ≥ 3 classes | 3: negatif, netral, positif | ✅ |
+| Suggestion 4 | ≥ 10,000 samples | 11,128 samples | ✅ |
+| Suggestion 5 | Three schemes, ≥ 2 distinct combinations | 3 schemes, 3 dimensions varied | ✅ |
+| Suggestion 6 | Inference outputs a categorical class | 9 test sentences + 10 real samples | ✅ |
 
-<sub>Kriteria Utama 1 is scored on sample count only. The scraping code is not in the archive.</sub>
+<sub>Criteria 1 is scored on sample count only. The scraping code is not in the archive.</sub>
 
 ---
 
