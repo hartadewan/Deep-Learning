@@ -185,8 +185,8 @@ n_samples = len(df)
 print(f"Jumlah sampel        : {n_samples:,}")
 print(f"Jumlah kolom         : {df.shape[1]}")
 print(f"Aplikasi sumber      : {df['nama_aplikasi'].nunique()} aplikasi")
-print(f"Ambang Kriteria Utama 1 (>= 3.000)  : {'TERPENUHI' if n_samples >= 3_000 else 'GAGAL'}")
-print(f"Ambang Saran ke-4     (>= 10.000)   : "
+print(f"Criteria 1 Threshold (>= 3.000)  : {'TERPENUHI' if n_samples >= 3_000 else 'GAGAL'}")
+print(f"Suggestion 4 Threshold     (>= 10.000)   : "
       f"{'TERPENUHI' if n_samples >= TRAINING.minimum_samples else 'PERIKSA ULANG'}")
 print()
 df.head(5)
@@ -1429,27 +1429,27 @@ def build_compliance_matrix(frame: pd.DataFrame,
     arsitektur = sorted({h["spec"].architecture.upper() for h in experiments.values()})
 
     item = [
-        ("Kriteria Utama 1", "Data hasil scraping mandiri, >= 3.000 sampel",
+        ("Criteria 1", "Data hasil scraping mandiri, >= 3.000 sampel",
          ">= 3.000", f"{n:,} sampel", n >= 3_000),
-        ("Kriteria Utama 2", "Ekstraksi fitur dan pelabelan data",
+        ("Criteria 2", "Ekstraksi fitur dan pelabelan data",
          "Ada", "Leksikon terbobot + TF-IDF/Sequence", True),
-        ("Kriteria Utama 3", "Algoritma pelatihan machine learning",
+        ("Criteria 3", "Algoritma pelatihan machine learning",
          "Ada", ", ".join(arsitektur), True),
-        ("Kriteria Utama 4", "Akurasi testing set >= 85%",
+        ("Criteria 4", "Akurasi testing set >= 85%",
          ">= 85%", f"{akurasi_terbaik:.2%} (terbaik)", akurasi_terbaik >= cfg.minimum_accuracy),
-        ("Saran 1", "Menggunakan algoritma deep learning",
+        ("Suggestion 1", "Menggunakan algoritma deep learning",
          "Ya", f"3 arsitektur neural: {', '.join(arsitektur)}", True),
-        ("Saran 2", "Akurasi training dan testing > 92%",
+        ("Suggestion 2", "Akurasi training dan testing > 92%",
          "> 92%", f"{'terpenuhi' if ada_target else 'belum'} pada minimal satu skema", ada_target),
-        ("Saran 2 (lanjutan)", "Skema lain tetap >= 85%",
+        ("Suggestion 2 (advanced)", "Skema lain tetap >= 85%",
          ">= 85%", f"{'seluruh skema memenuhi' if semua_min else 'ada yang di bawah'}", semua_min),
-        ("Saran 3", "Dataset memiliki minimal tiga kelas",
+        ("Suggestion 3", "Dataset memiliki minimal tiga kelas",
          ">= 3", f"{n_kelas} kelas: {', '.join(CLASS_ORDER)}", n_kelas >= 3),
-        ("Saran 4", "Jumlah data minimal 10.000 sampel",
+        ("Suggestion 4", "Jumlah data minimal 10.000 sampel",
          ">= 10.000", f"{n:,} sampel", n >= cfg.minimum_samples),
-        ("Saran 5", "Tiga skema pelatihan, minimal 2 kombinasi berbeda",
+        ("Suggestion 5", "Tiga skema pelatihan, minimal 2 kombinasi berbeda",
          "3 skema", f"{len(table)} skema, 3 dimensi divariasikan", len(table) >= 3),
-        ("Saran 6", "Inferensi menghasilkan kelas kategorikal",
+        ("Suggestion 6", "Inferensi menghasilkan kelas kategorikal",
          "Ada", f"{len(hasil_infer)} kalimat uji + 10 sampel nyata", len(hasil_infer) > 0),
     ]
 
