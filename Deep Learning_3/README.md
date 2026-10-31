@@ -371,7 +371,7 @@ The archive contains no executed notebook or result logs, so **no metrics are re
 | Path | Purpose |
 |---|---|
 | `Bitcoin3.csv` | Optional local copy of the dataset, used only if the download fails |
-| `DLTM_Hartanto Dewantoro/` | `SUBMISSION_DIR`; the final cell expects the `.keras` files here. The name contains a space. |
+| `DLTM/` | `SUBMISSION_DIR`; the final cell expects the `.keras` files here. The name contains a space. |
 
 The three `.keras` files store model weights only, with no optimizer state, which is consistent with training in a custom loop on uncompiled models.
 
@@ -443,7 +443,7 @@ Running pyflakes on the shipped script reports the undefined names `display` and
 |---|---|---|
 | `NameError: name 'display' is not defined` | The script runs as plain Python (`python Training_3.py`) | Run it as a notebook. Otherwise add `from IPython.display import display` to §1 and accept that the plots will open in blocking windows. |
 | `NameError: name 'MODEL_FILES' is not defined` in the last cell | The cell that saved the models and defined `MODEL_FILES` is missing from the export | Insert the [reconstruction below](#fix-model-files) |
-| The final cell cannot find the `.keras` files | The archive stores them at the project root, but the cell reads them from `SUBMISSION_DIR` | Let the reconstructed cell save them there, or copy the files into `DLTM_Hartanto Dewantoro/` |
+| The final cell cannot find the `.keras` files | The archive stores them at the project root, but the cell reads them from `SUBMISSION_DIR` | Let the reconstructed cell save them there, or copy the files into `DLTM/` |
 | `ImportError: Missing optional dependency 'Jinja2'` | pandas `Styler` needs Jinja2, which `requirements.txt` does not install | `pip install jinja2` |
 | Dataset download fails | No network access, or Google Drive refuses or throttles the download | Place `Bitcoin3.csv` (same schema) next to the script |
 | Crashes during datetime operations | Possibly the yanked pandas `3.0.4` | Pin a non-yanked patch release (see [Installation](#getting-started)) |
