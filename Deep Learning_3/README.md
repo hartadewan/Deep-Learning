@@ -196,7 +196,7 @@ flowchart TB
 ```
 
 <details>
-<summary><b>Custom components at a glance</b></summary>
+<summary><b>Custom Components</b></summary>
 
 | Component | Section | Behavior and validation in §9.5 |
 |---|---|---|
